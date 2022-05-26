@@ -1,0 +1,106 @@
+/*this is external css( styling in seperate css file)
+CSS - cascading style sheets
+      - responsible for styling the web 
+Basic syntax:
+      - selector{proprty:value;property:value} 
+        - selector- what element you want to style
+        - property- which property you want to style
+        - value- value of that property
+        
+internal css - adding styles to head of html page
+
+-selectors--> 
+-hn for <hn></hn> tag
+-p for <p></p> tag
+-h1,h2,p{ } - we can also group selectors
+-id selector - id can be used as selectors - syntax - #idvalue{ }
+-class selector - class can be used as selector - syntax - .classvalue{ }
+-inheritance
+-last rule and specificity
+-universal selector - *{ } - used for all tag at a time
+
+properties-->
+
+-color properties:
+-color: green; - color of the tag
+-background: black; - of the tag
+-basically we have 140 colors, for more colors
+ we can use RGB (0-255)- syntax: background: rgb(x,y,z);
+-RGBA (0-1) opacity/transparency- syntax: background: rgba(x,y,z,w);w=opacity value(0,1)
+-hex(0-9-A-F) value can be used for color- syntax: #RRGGBB 
+
+-units of value:
+-pixcels- px: it is not a responsive value.
+ pixels are dots on screen
+ same for all size of screens(non responsive)
+-percent value- p%: relative value
+ depend on parent tag if tag is written in another tag
+-em,1em: em relative depend on parent,1em=16px(default) 
+-rem- relative depends on root
+-vh- height % of screen
+-vw- width % of screen
+calc(x - y) function
+
+font family property-->
+font-size: ..px;
+text-transform: lowercase/uppercase;
+font-family: calbri; - font of text
+font-weight: lighter/bold/bolder/400/700; - amount of bold in a text
+font-style: italic/oblique;
+text-align: ...;
+line-height: 11em; - height of a line
+text-decoration: ...;
+
+CSS BOX MODEL-->
+-everything in a box
+properties of css box model->
+padding | border | margin
+1.padding- free space of a tag
+   padding-top: ..px;
+   padding-bottom/left/right: ..px;
+   or
+   padding:  ..px;
+2.margin- free space around tag  
+   margin-top/right/left/bottom: ..px;
+3. border-style: ...;
+   border-...: ...;
+   border: ..px solid black;- border around tag
+   outline-offset: ..px;
+
+default display property-->
+-display: inline/block; - it display the tags in a line or in different block.
+
+mobile navbar-->
+
+
+Media queries can be used to check many things, such as:
+-width and height of the viewport
+-width and height of the device
+-orientation (is the tablet/phone in landscape or portrait mode?)
+-resolution
+
+*/
+body{
+      background: rgba(104, 209, 118, 0.5);
+      width: 100vw;
+      height: 100vh;
+}
+.navbar{
+      background: rgb(109, 150, 107);
+      color:rgba(246, 248, 246, 0.5);
+}
+
+.featuredproducts{
+      display: inline;
+}
+.img{
+      display:inline;
+}
+ul li{
+      list-style: none;
+}
+@media screen and (min-width: 600px) {
+      body{
+        background: rgb(55, 90, 180);
+      }
+}
